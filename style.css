@@ -1,0 +1,314 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --default-header-color: linear-gradient(45deg, #d1b2ad, #ffdbcc);
+    --default-container-color: linear-gradient(45deg, #7adeba, #c2f0a8);
+}
+
+.header-container{
+    background: var(--default-header-color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.logo-image-container{
+}
+
+.logo-name-container{
+    flex: 1;
+    padding-top: 11px;
+    font-family: monospace;
+}
+
+.logo-name-container h1{
+    padding-left: 20px;
+    color: black;
+}
+
+.navigation-container{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nav-link{
+    flex: 1;
+    padding-top: 42px;
+    padding-left: 65px;
+    text-decoration: none;
+    color: black;
+    font-family: monospace;
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+.nav-link:hover{
+    background: var(--default-header-color);
+}
+
+.container{
+    background: var(--default-container-color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.left-article-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.left-article-container h2{
+    text-align: center;
+    font-size: 4em;
+    font-family: monospace;
+}
+
+.left-article-container a{
+    text-decoration: none;
+    color: black;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 32px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.4em;
+    font-weight: 800;
+}
+
+.left-article-container a:hover{
+    background: var(--default-header-color);
+}
+.right-image-container{
+    flex: 1;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.container1{
+    background: var(--default-container-color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.left-article-container1{
+    flex: 1;
+}
+
+.left-article-container1 h3{
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.5em;
+    color: black;
+}
+
+.left-article-container1 p{
+    text-align: justify;
+    font-family: monospace;
+    margin: 20px;
+    line-height: 25px;
+    font-weight: 800;
+    color: black;
+}
+
+.right-article-container1{
+    flex: 1;    
+}
+
+.right-article-container1 h3{
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.5em;
+    color: black;
+}
+
+.right-article-container1 p{
+    text-align: justify;
+    font-family: monospace;
+    margin: 20px;
+    line-height: 25px;
+    font-weight: 800;
+    color: black;
+}
+
+.footer-container{
+    display: flex;
+    background: var(--default-header-color);
+    flex-wrap: wrap;
+}
+
+.footer-container p{
+    text-align: center;
+    flex: 1;
+    font-family: monospace;
+}
+
+@media (max-width: 360px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    
+    :root{
+        --default-header-color: linear-gradient(45deg, #d1b2ad, #ffdbcc);
+        --default-container-color: linear-gradient(45deg, #7adeba, #c2f0a8);
+    }
+    
+    .header-container{
+        background: var(--default-header-color);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .logo-image-container{
+        margin: auto;
+    }
+    
+    .logo-name-container{
+        flex: 1;
+        padding-top: 11px;
+        font-family: monospace;
+    }
+    
+    .logo-name-container h1{
+        padding-left: 20px;
+        color: black;
+    }
+    
+    .navigation-container{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+    .nav-link{
+        flex: 1;
+        text-decoration: none;
+        color: black;
+        font-family: monospace;
+        font-size: 1.2em;
+        font-weight: 800;
+        padding-bottom: 35px;
+        padding-right: 40px;
+    }
+    
+    .nav-link:hover{
+        background: var(--default-header-color);
+    }
+    
+    .container{
+        background: var(--default-container-color);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .left-article-container{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .left-article-container h2{
+        text-align: center;
+        font-size: 4em;
+        font-family: monospace;
+    }
+    
+    .left-article-container a{
+        text-decoration: none;
+        color: black;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-top: 32px;
+        text-align: center;
+        font-family: monospace;
+        font-size: 1.4em;
+        font-weight: 800;
+    }
+    
+    .left-article-container a:hover{
+        background: var(--default-header-color);
+    }
+    .right-image-container{
+        flex: 1;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .right-image-container img{
+        width: 360px;
+    }
+    
+    .container1{
+        background: var(--default-container-color);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .left-article-container1{
+        flex: 1;
+    }
+    
+    .left-article-container1 h3{
+        text-align: center;
+        font-family: monospace;
+        font-size: 1.5em;
+        color: black;
+    }
+    
+    .left-article-container1 p{
+        text-align: justify;
+        font-family: monospace;
+        margin: 20px;
+        line-height: 25px;
+        font-weight: 800;
+        color: black;
+    }
+    
+    .right-article-container1{
+        flex: 1;    
+    }
+    
+    .right-article-container1 h3{
+        text-align: center;
+        font-family: monospace;
+        font-size: 1.5em;
+        color: black;
+    }
+    
+    .right-article-container1 p{
+        text-align: justify;
+        font-family: monospace;
+        margin: 20px;
+        line-height: 25px;
+        font-weight: 800;
+        color: black;
+    }
+    
+    .footer-container{
+        display: flex;
+        background: var(--default-header-color);
+        flex-wrap: wrap;
+    }
+    
+    .footer-container p{
+        text-align: center;
+        flex: 1;
+        font-family: monospace;
+    }
+    
+}
